@@ -1,0 +1,142 @@
+/* FRONT CARD STYLING */
+
+.card-container {
+  justify-content: center;
+  text-align: center;
+  width: 371px;
+  height: 372px;
+}
+
+.cardTitle {
+  display: flex;
+  height: 126px;
+  flex-direction: row; 
+  border-radius: 8px 8px 0px 0px;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+
+.cardTitle h1 {
+  justify-content: center;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 82px;
+  align-items: center; 
+}
+
+.cardButton {
+  text-transform: uppercase;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  width: 311px;
+  height: 50px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.subtitleText {
+  font-family: Lora;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 47px;
+  text-align: center;
+}
+
+.cardEmoji {
+  font-size: 70px;
+}
+
+.lightPart {
+  position: relative;
+  width: 371px;
+  height: 246px;
+  border-radius: 0px 0px 8px 8px; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+/* CLICKED CARD STYLING */
+.clicked-card {
+  height: 372px;
+  width: 371px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
+  margin: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.top {
+  box-sizing: border-box;
+  height: 126px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 30px 26px 30px;
+}
+
+.bottom {
+  box-sizing: border-box;
+  height: 246px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.clicked-card .top,
+.clicked-card .bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  position: absolute;
+  width: 100%;
+  z-index: 0;
+  transition: 1s;
+}
+
+.clicked-card .top {
+  top: 0;
+}
+
+.clicked-card .bottom {
+  bottom: 0;
+}
+
+.clicked-card .top:hover {
+  transition: 1s;
+  height: 100%;
+  z-index: 99;
+  top: 0;
+}
+
+.clicked-card .bottom:hover {
+  transition: 1s;
+  height: 100%;
+  z-index: 99;
+  bottom: 0;
+}
+
+.top h1 {
+  justify-content: center;
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 70px;
+  line-height: 82px;
+  align-items: center; 
+}
